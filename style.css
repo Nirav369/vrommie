@@ -1,0 +1,182 @@
+/*Cascading style sheet 			Nirav - 12-31-2016 */
+
+@import url('https://fonts.googleapis.com/css?family=Work+Sans');
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Bree+Serif');
+@import url('https://fonts.googleapis.com/css?family=Allura');
+body{ margin:0; padding:0; background-color:#fffad5; font-family: 'Roboto', sans-serif;}
+a{ text-decoration:none;}
+#preloader {position:fixed; top:0; left:0; right:0; bottom:0; background-color:#ffffff; z-index:99999;}
+#status { width:200px;height:200px;position:absolute; left:50%; top:50%; background-image:url(../image/cube.gif); background-repeat:no-repeat; background-position:center; margin:-100px 0 0 -100px;}
+.bodyWrapper{overflow:hidden; margin:0;}
+.mainHeader{ width:100%; position:absolute; left:0; top:0;}
+.mainLogo{ position: absolute; top: 0; left: 0; z-index:99;}
+.mainNavigation{float:right; text-align: center;}
+.mainMenuIcon{line-height: 52px; display: block; width: 90px; position: absolute; right: 0; z-index: 999; cursor: pointer;}
+.menuList{ display:none; width:100%; height:100vh; text-align:center; padding:0; margin:0; background-color: rgba(0,0,0,0.95); position: absolute; z-index: 100;}
+.menuList li{ font-size:62px; margin:8% 0; list-style:none; font-family: 'Work Sans', sans-serif;}
+.menuList li a{ color:#ffd34e; text-transform:uppercase;     letter-spacing: 10px;}
+.meetAllBody{ width:100%; height:100vh; overflow:hidden;}
+.meetSlide{width:100%; height:100vh; display:none;}
+.sliderRight, .sliderLeft{width:50%; position:relative; float:left; height:100vh; overflow:hidden;}
+.blackBgWrapper{height:80%; width:80%; margin:5% auto; overflow:auto; background-color:rgba(0,0,0,0.6); transition:all 0.2s linear; -webkit-transition:all 0.2s linear;}
+.blackBgWrapper h1{ font-family: 'Work Sans', sans-serif; color:#ffffff; text-transform:uppercase; letter-spacing: 5px; text-align:center; font-weight:300; margin: 20% 0;}
+.sliderLeftTop, .sliderRightTop, .sliderRightBottom { display:none; background-size: cover; transition:all 3s linear; -webkit-transition:all 3s linear; }
+.sliderLeftTop:hover, .sliderRightTop:hover, .sliderRightBottom:hover {transform:scale(1.1); -webkit-transform:scale(1.1);}
+.sliderLeftTop:hover .blackBgWrapper, .sliderRightTop:hover .blackBgWrapper, .sliderRightBottom:hover .blackBgWrapper{height:100%; width:100%; margin:0; }
+.sliderLeftTop{  position:absolute; width:100%; height:100vh; top:0; left:0;  cursor:url(../image/targetCursor.cur), auto; cursor:url(../image/targetCursor.png) 5 5, auto;}
+.sliderRightTop{ position:absolute; top:0; right:0; width:100%; height:50vh;}
+.sliderRightBottom{ position:absolute; bottom:0; right:0; width:100%; height:50vh;}
+.nextSlide{ width:100%; height:50px; position:absolute; bottom:0; z-index:99; text-align:center; transition:all 0.1s linear; -webkit-transition:all 0.1s linear;}
+.nextSlide a{     cursor: pointer; width: 100%; display: block; height:50px; overflow:hidden; transition:all 0.1s linear; -webkit-transition:all 0.1s linear;}
+.nextSlide:hover {height:75px; bottom:0; background-color:rgba(0,0,0,0.95); }
+.nextSlide:hover a{ height:70px; }
+.meetSlide1, .sliderLeftTop1, .sliderRightTop1, .sliderRightBottom1, .nextSlide1{ display:block; }
+.nextSlide2, .nextSlide3, .nextSlide4, .nextSlide5, .nextSlide6, .nextSlide7, .nextSlide8, .nextSlide9, .nextSlide10, .nextSlide11, .nextSlide12, .nextSlide13{display:none;}
+.sliderLeftTop1{ background-image:url(../image/meetall/avinash3.jpg);}
+.sliderRightTop1{background-image:url(../image/meetall/avinash2.jpg);}
+.sliderRightBottom1{background-image:url(../image/meetall/avinash1.jpg);}
+.sliderLeftTop2{ background-image:url(../image/meetall/shailaja3.jpg);}
+.sliderRightTop2{background-image:url(../image/meetall/shailaja1.jpg);}
+.sliderRightBottom2{background-image:url(../image/meetall/shailaja2.jpg);}
+.sliderLeftTop3{ background-image:url(../image/meetall/jazz2.jpg);}
+.sliderRightTop3{background-image:url(../image/meetall/jazz1.jpg);}
+.sliderRightBottom3{background-image:url(../image/meetall/jazz3.jpg);}
+.sliderLeftTop4{ background-image:url(../image/meetall/sanika3.jpg);}
+.sliderRightTop4{background-image:url(../image/meetall/sanika2.jpg);}
+.sliderRightBottom4{background-image:url(../image/meetall/sanika1.jpg);}
+.sliderLeftTop5{ background-image:url(../image/meetall/praveen2.jpg);}
+.sliderRightTop5{background-image:url(../image/meetall/praveen1.jpg);}
+.sliderRightBottom5{background-image:url(../image/meetall/praveen3.jpg);}
+.sliderLeftTop6{ background-image:url(../image/meetall/sonal2.jpg);}
+.sliderRightTop6{background-image:url(../image/meetall/sonal1.jpg);}
+.sliderRightBottom6{background-image:url(../image/meetall/sonal3.jpg);}
+.sliderLeftTop7{ background-image:url(../image/meetall/anoop1.jpg);}
+.sliderRightTop7{background-image:url(../image/meetall/anoop3.jpg);}
+.sliderRightBottom7{background-image:url(../image/meetall/anoop2.jpg);}
+.sliderLeftTop8{ background-image:url(../image/meetall/nandu2.jpg);}
+.sliderRightTop8{background-image:url(../image/meetall/nandu3.jpg);}
+.sliderRightBottom8{background-image:url(../image/meetall/nandu1.jpg);}
+.sliderLeftTop9{ background-image:url(../image/meetall/sunil1.jpg);}
+.sliderRightTop9{background-image:url(../image/meetall/sunil2.jpg);}
+.sliderRightBottom9{background-image:url(../image/meetall/sunil3.jpg);}
+.sliderLeftTop10{ background-image:url(../image/meetall/harika1.jpg);}
+.sliderRightTop10{background-image:url(../image/meetall/harika2.jpg);}
+.sliderRightBottom10{background-image:url(../image/meetall/harika3.jpg);}
+.sliderLeftTop11{ background-image:url(../image/meetall/vamshi3.jpg);}
+.sliderRightTop11{background-image:url(../image/meetall/vamshi1.jpg);}
+.sliderRightBottom11{background-image:url(../image/meetall/vamshi2.jpg);}
+.sliderLeftTop12{ background-image:url(../image/meetall/keerti1.jpg);}
+.sliderRightTop12{background-image:url(../image/meetall/keerti3.jpg);}
+.sliderRightBottom12{background-image:url(../image/meetall/keerti2.jpg);}
+.sliderLeftTop13{ background-image:url(../image/meetall/nirav3.jpg);}
+.sliderRightTop13{background-image:url(../image/meetall/nirav1.jpg);}
+.sliderRightBottom13{background-image:url(../image/meetall/nirav2.jpg);}
+.sliderLeftTop14{ background-image:url(../image/meetall/priya3.jpg);}
+.sliderRightTop14{background-image:url(../image/meetall/priya2.jpg);}
+.sliderRightBottom14{background-image:url(../image/meetall/priya1.jpg);}
+.sliderRightInfo{ width:100%; height:100%; position:absolute; background-color: rgba(16,91,99,0.95); display:none;}
+.myInformation{ width:70%; margin:15% auto; line-height:34px;}
+.myInformation ul {padding:0; margin:0;}
+.myInformation ul li{ font-size:1.5em; color:#ffffff; font-weight:200;}
+.myInformation ul li:first-child {list-style:none;}
+.myInformation ul li h1{ text-transform:uppercase;}
+.myInformation ul li h1 span{letter-spacing:5px;}
+.myInformation ul li p{ margin:0;}
+.indexBody{ width:100%; height:100vh; overflow:auto; position:relative;}
+.indexWall{ width:90%; height:100vh; overflow:visible; margin:0 auto; position:relative;}
+.wallImage{ background-color:#ffffff; padding:10px; position:absolute; transition:all 0.3s linear; -webkit-transition:all 0.3s linear;}
+.wallImage img{width:100%; }
+#wall1{width: 20%; top:100px; left:0; -ms-transform: rotate(-7deg); -webkit-transform: rotate(-7deg); transform: rotate(-7deg);}
+#wall2{width: 14%; top:85px; left:20%; -ms-transform: rotate(10deg); -webkit-transform: rotate(10deg); transform: rotate(10deg);}
+#wall3{width: 25%; top:300px; left:-1%; -ms-transform: rotate(1deg); -webkit-transform: rotate(1deg); transform: rotate(1deg);}
+#wall4{width: 21%; top:100px; right:29%; -ms-transform: rotate(1deg); -webkit-transform: rotate(1deg); transform: rotate(1deg);}
+#wall5{width: 8%; top:360px; left:27%; -ms-transform: rotate(-7deg); -webkit-transform: rotate(-7deg); transform: rotate(-7deg);}
+#wall6{width: 23%; top:310px; left:38%; -ms-transform: rotate(-7deg); -webkit-transform: rotate(-7deg); transform: rotate(-7deg);}
+#wall7{width: 14%; top:90px; right:14%; -ms-transform: rotate(-7deg);-webkit-transform: rotate(-7deg); transform: rotate(-7deg);}
+#wall8{width: 18%; top:350px; right:18%; -ms-transform: rotate(3deg);-webkit-transform: rotate(3deg); transform: rotate(3deg);}
+#wall9{width: 16%; top:320px; right:0; -ms-transform: rotate(-7deg);-webkit-transform: rotate(-7deg); transform: rotate(-7deg);}
+#wall10{width: 12%; top:90px; right:1%; -ms-transform: rotate(7deg);-webkit-transform: rotate(7deg); transform: rotate(7deg);}
+#wall11{width: 11%; top:90px; left:36%; -ms-transform: rotate(7deg);-webkit-transform: rotate(7deg); transform: rotate(7deg);}
+.wallImage:hover { -ms-transform: rotate(0deg) !important; -webkit-transform: rotate(0deg) !important; transform: rotate(0deg) !important;}
+.quoteBottom{position:absolute; bottom:0; padding:5px 0; width:100%;}
+.quoteBottom p span{font-size:20px; font-family: 'Roboto', sans-serif; font-weight:700;}
+.quoteBottom p {font-size:32px; letter-spacing:3px; font-family: 'Allura', cursive;  width:70%; margin:0 auto; }
+.memoriesSlider { width:100%; height:100vh;}
+.sliderInner {float:left; height:100vh; padding:0; margin:0; width:100%; position:relative;}
+.memoriesblock{ float:left; margin:5px; display:block; overflow:hidden; padding:10px; border-radius:5px; position:absolute;}
+.blackCoat{position:absolute; width:100%; height:100%; top:0; left:0; background-color:rgba(0,0,0,0.6); z-index:9; transition: all 0.5s ease; }
+.blackCoat p{ font-size:24px; color:#ffd34e; letter-spacing:2px; padding:10px; text-align:center; line-height:36px; bottom:0; position:absolute; width:98%;}
+.memoriesblock img{width:100%; height:100%; transform:scale(1.3); transition: all 0.5s ease; overflow:hidden;}
+.memoriesblock:hover .blackCoat{display:none;}
+.memoriesblock:hover img{transform:scale(1)}
+#myBlock1{ width:14%; top:0; left:0;}
+#myBlock2{ width:14%; top:24.55%; left:0;}
+#myBlock3{ width:16%; top:0; left:15%;}
+#myBlock4{ width:10%; top:31%; left:15%;}
+#myBlock5{ width:13%; top:31%; left:26%;}
+#myBlock6{ width:7%; top:0; left:32%;}
+#myBlock7{ width:7%; top:13%; left:32%;}
+#myBlock8{ width:8%; top:22%; left:40%;}
+#myBlock9{ width:8%; top:0; left:40%;}
+#myBlock10{ width:12%; top:0; right:0;}
+#myBlock11{ width:12%; top:24%; right:0;}
+#myBlock12{ width:16%; top:0; right:13%;}
+#myBlock13{ width:11.5%; top:27.5%; right:13%;}
+#myBlock14{ width:15%; top:27%; right:25.5%;}
+#myBlock15{ width:10%; top:0; right:30%;}
+#myBlock16{ width:7%; top:32%; right:42%;}
+#myBlock17{ width:7.5%; top:11.5%; right:41.5%;}
+#myBlock18{ width:8%; top:0; right:41.5%;}
+.bgRed{ background-color:#bd4932; }
+.bgBlue{ background-color:#105b63;}
+.bgOrange{ background-color:#ffd34e	;}
+
+@media only screen and (max-width: 770px){
+	.sliderLeft{width:100%; height:50vh;}
+	.sliderRight{width:100%; height:50vh;}
+	.sliderLeftTop{height:50vh;}
+	.sliderRightBottom{ display:none !important;}
+	.myInformation{ margin:5% auto;}
+	.myInformation ul li p { margin:0; font-size:24px;}
+	.myInformation ul li h1{margin:0;}
+	.sliderLeftTop2 { background-position-y: -130px;}
+	.sliderLeftTop5 { background-position-y: -50px;}
+	.sliderLeftTop7 { background-position-y: -20px;}
+	.sliderLeftTop8 { background-position-y: -230px;}
+	.sliderLeftTop9 { background-position-y: -100px;}
+	.sliderLeftTop10 { background-position: 90px -55px;}
+	.sliderLeftTop11 { background-position-y: -100px;}
+	#myBlock1{ width:20%; top:0; left:0;}
+	#myBlock2{ width: 21%;top: 17.5%; left:0;}
+	#myBlock3{ width:16%; top:1%; left:22%;}
+	#myBlock4{ width: 17%; top: 17%; left: 23%;}
+	#myBlock5{ width: 22%; top: 34%; left:0.5%;}
+	#myBlock6{ width: 18%; top: 0; left: 40%;}
+	#myBlock7{width: 12%;top: 34%; left: 24%;}
+	#myBlock8{ width: 13%; top: 17%; left: 51%;}
+	#myBlock9{ width: 7.5%; top: 0;left: 59.7%;}
+	#myBlock10{ width:11%; top:0; right:0;}
+	#myBlock11{ width: 15%; top: 15%; right: 0;}
+	#myBlock12{ width:16%; top:0; right:13%;}
+	#myBlock13{ width: 19%; top: 31%; right:0; }
+	#myBlock14{ width: 15%; top: 15.5%;right: 17%;}
+	#myBlock15{ width: 11%; top: 28%; right: 21%;}
+	#myBlock16{ width: 7.5%; top: 17%;right: 48.5%;}
+	#myBlock17{ width: 11%;top: 33.5%; right: 49%;}
+	#myBlock18{ width: 13%; top: 37.5%; right: 33.9%;}
+}
+
+@media only screen and (max-width: 480px){
+	.quoteBottom p{ font-size:30px;}
+	#wall3{top:220px;}
+	#wall5{top:245px;}
+	#wall6{top:205px;}
+	#wall8{top:250px;}
+	#wall9{top:202px;}
+	.menuList li {font-size: 60px;}
+}
+
+@media only screen and (max-width: 322px){
+	.quoteBottom p{ font-size:24px;
+}
